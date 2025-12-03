@@ -69,43 +69,6 @@ Handles peer connections, handshakes, and piece workflow.
 The CLI entrypoint connecting all modules.
 
 ---
-## 📁 Project Structure
-
-bittorrent-python/
-│
-├── app/
-│   └── main.py                # Entry point
-│
-├── torrent/
-│   ├── parser.py              # Torrent & magnet parsing
-│   └── __init__.py
-│
-├── network/
-│   ├── tracker.py             # Tracker communication
-│   └── __init__.py
-│
-├── client/
-│   ├── engine.py              # Peer & piece logic
-│   └── __init__.py
-│
-├── utils/
-│   ├── hashing.py             # SHA1 utilities
-│   └── __init__.py
-│
-├── samples/
-│   ├── sample.torrent
-│   ├── debug_peers.py
-│   └── debug_torrent.py
-│
-├── .github/
-│   └── workflows/
-│       └── ci.yml             # GitHub Actions CI
-│
-├── README.md
-└── .gitignore
-
-
----
 
 ## 🛠️ Installation
 
@@ -117,4 +80,5 @@ cd bittorrent-python
 2. Install dependencies
 pip install -r requirements.txt
 ```
+
 
