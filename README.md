@@ -2,7 +2,6 @@
 
 A lightweight, educational BitTorrent client built entirely in Python — designed to help you understand the internals of the BitTorrent protocol: torrent parsing, peer discovery, tracker communication, handshakes, and piece exchange.
 
-<img width="591" alt="diagram" src="https://github.com/user-attachments/assets/41f7be23-c7a2-43e4-99ad-066bb12d3068" />
 <img width="800" alt="architecture" src="https://github.com/user-attachments/assets/eb6b3912-ea10-4b0a-b8c6-b229fe3e64c2" />
 
 ---
@@ -71,39 +70,38 @@ The CLI entrypoint connecting all modules.
 
 ---
 
-## 📁 Project Structure
 bittorrent-python/
 │
 ├── app/
-│ └── main.py # Entry point
+│   └── main.py                # Entry point
 │
 ├── torrent/
-│ ├── parser.py # Torrent & magnet parsing
-│ └── init.py
+│   ├── parser.py              # Torrent & magnet parsing
+│   └── __init__.py
 │
 ├── network/
-│ ├── tracker.py # Tracker communication
-│ └── init.py
+│   ├── tracker.py             # Tracker communication
+│   └── __init__.py
 │
 ├── client/
-│ ├── engine.py # Peer & piece logic
-│ └── init.py
+│   ├── engine.py              # Peer & piece logic
+│   └── __init__.py
 │
 ├── utils/
-│ ├── hashing.py # SHA1 utilities
-│ └── init.py
+│   ├── hashing.py             # SHA1 utilities
+│   └── __init__.py
 │
 ├── samples/
-│ ├── sample.torrent
-│ ├── debug_peers.py
-│ └── debug_torrent.py
+│   ├── sample.torrent
+│   ├── debug_peers.py
+│   └── debug_torrent.py
 │
 ├── .github/
-│ └── workflows/
-│ └── ci.yml # GitHub Actions CI
+│   └── workflows/
+│       └── ci.yml             # GitHub Actions CI
 │
 ├── README.md
-├── .gitignore
+└── .gitignore
 
 
 ---
@@ -118,24 +116,3 @@ cd bittorrent-python
 2. Install dependencies
 pip install -r requirements.txt
 ```
-📡 How the BitTorrent Handshake Works
-<img width="1000" alt="handshake" src="https://github.com/user-attachments/assets/ecb4f7ed-b74e-4d2a-a7d8-79c6ac94912d" />
-
-Client connects to a peer (IP:port)
-
-Sends handshake containing:
-
-Protocol identifier: BitTorrent protocol
-
-info-hash
-
-peer ID
-
-Peer responds with its handshake
-
-After verification → piece requests begin
-
-This handshake enables secure and valid P2P communication.
-
-
-bittorrent-python/
