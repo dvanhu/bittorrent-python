@@ -1,0 +1,8 @@
+# Set reviews for top-level code
+/       @dvanhu
+
+# Files under client/ get code owner review from you
+/client/ @dvanhu
+
+# CI and workflows
+.github/workflows/ @dvanhu
