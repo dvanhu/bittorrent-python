@@ -69,6 +69,7 @@ Handles peer connections, handshakes, and piece workflow.
 The CLI entrypoint connecting all modules.
 
 ---
+## 📁 Project Structure
 
 bittorrent-python/
 │
@@ -116,3 +117,4 @@ cd bittorrent-python
 2. Install dependencies
 pip install -r requirements.txt
 ```
+
