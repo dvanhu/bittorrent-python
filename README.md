@@ -2,7 +2,7 @@
 
 A lightweight, educational BitTorrent client built entirely in Python — designed to help you understand the internals of the BitTorrent protocol: torrent parsing, peer discovery, tracker communication, handshakes, and piece exchange.
 
-<img width="800" alt="architecture" src="https://github.com/user-attachments/assets/eb6b3912-ea10-4b0a-b8c6-b229fe3e64c2" />
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/cebee8d1-322e-4b9e-8d2f-9707c1b785dd" />
 
 ---
 
@@ -80,5 +80,6 @@ cd bittorrent-python
 2. Install dependencies
 pip install -r requirements.txt
 ```
+
 
 
